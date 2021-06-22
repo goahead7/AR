@@ -9,3 +9,4 @@ function connect(): PDO {
     } catch (PDOException $e) {
         die($e->getMessage());
     }
+    return connect();
